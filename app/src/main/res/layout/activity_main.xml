@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          tools:layout_editor_absoluteX="8dp"
+          tools:layout_editor_absoluteY="8dp"
+          >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Леха.Донос"
+              android:gravity="center"
+              android:textSize="24dp"
+              android:textStyle="bold"/>
+
+          <TextView
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="ФИО преступника:"
+              android:textSize="24sp" />
+
+          <EditText
+              android:id="@+id/FIO"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:ems="10"
+              android:hint="ФИО преступника"
+              android:inputType="textPersonName" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:text="Адрес проживания мудака:"
+              android:textSize="24sp" />
+
+          <EditText
+              android:id="@+id/Adres"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:hint="Андрес"
+              android:inputType="textPersonName" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:text="Преступления:"
+              android:textSize="24sp"
+              android:textStyle="bold" />
+
+          <CheckBox
+              android:id="@+id/checkBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Оскорбление чувств верующих" />
+
+          <CheckBox
+              android:id="@+id/checkBox2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Неуважение Путина" />
+
+          <CheckBox
+              android:id="@+id/checkBox3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Пидр" />
+
+          <CheckBox
+              android:id="@+id/checkBox4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Заебал" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Оплата"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Оплата"
+                android:inputType="number"
+                android:text="" />
+
+            <Button
+                android:id="@+id/s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Вызвать Стаса" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
